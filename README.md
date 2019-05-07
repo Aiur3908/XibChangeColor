@@ -8,7 +8,7 @@
 
 ![image](https://github.com/Aiur3908/XibChangeColor/blob/master/ReadmeImage/1.png)
 
-請注意，小數點請不要輸入過多，約後3~4位即可，同一個顏色xCode的小數點位數有可能不同。
+請注意，小數點請不要輸入過多，約後3~4位即可，同一個顏色的小數點位數有可能不同。
 
 2. 將ChangeXibColor與專案放在一起，前往專案目錄後，拉到終端機執行
 
