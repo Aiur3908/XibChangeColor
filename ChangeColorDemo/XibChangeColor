@@ -41,33 +41,33 @@ function scanInterfaceBuilderFiles($dir) {
 
 function replaceColorSpace($filePath) {
     ///舊的Red
-    $oldRedColor = "0.8431";
+    $oldRed = "0.8431";
     ///舊的Green
-    $oldGreenColor = "0.2156";
+    $oldGreen = "0.2156";
     ///舊的Blue
-    $oldBlueColor = "0.2588";
+    $oldBlue = "0.2588";
     ///舊的Alpha
     $oldAlpha = "1";
     ///新的Red
-    $newRedColor = "1";
+    $newRed = "1";
     ///新的Green
-    $newGreenColor = "1";
+    $newGreen = "1";
     ///新的Blue
-    $newBlueColor = "0";
+    $newBlue = "0";
     ///新的Alpha
     $newAlpha = "1";
 
     $fileContents = file_get_contents($filePath);
-    $redPattern = '/red="'.$oldRedColor.'[0-9]+"/';
-    $greenPattern = '/green="'.$oldGreenColor.'[0-9]+"/';
-    $bluePattern = '/blue="'.$oldBlueColor.'[0-9]+"/';
+    $redPattern = '/red="'.$oldRed.'[0-9]+"/';
+    $greenPattern = '/green="'.$oldGreen.'[0-9]+"/';
+    $bluePattern = '/blue="'.$oldBlue.'[0-9]+"/';
     $alphaPattern = '/alpha="'.$oldAlpha.'[0-9]+"/';
-    $fileContents = preg_replace($redPattern, 'red="'.$oldRedColor.'"', $fileContents);
-    $fileContents = preg_replace($greenPattern, 'green="'.$oldGreenColor.'"', $fileContents);
-    $fileContents = preg_replace($bluePattern, 'blue="'.$oldBlueColor.'"', $fileContents);
+    $fileContents = preg_replace($redPattern, 'red="'.$oldRed.'"', $fileContents);
+    $fileContents = preg_replace($greenPattern, 'green="'.$oldGreen.'"', $fileContents);
+    $fileContents = preg_replace($bluePattern, 'blue="'.$oldBlue.'"', $fileContents);
     $fileContents = preg_replace($alphaPattern, 'alpha="'.$oldAlpha.'"', $fileContents);
-    $oldColor = 'red="'.$oldRedColor.'" green="'.$oldGreenColor.'" blue="'.$oldBlueColor.'" alpha="'.$oldAlpha.'"';
-    $newColor = 'red="'.$newRedColor.'" green="'.$newGreenColor.'" blue="'.$newBlueColor.'" alpha="'.$newAlpha.'"';
+    $oldColor = 'red="'.$oldRed.'" green="'.$oldGreen.'" blue="'.$oldBlue.'" alpha="'.$oldAlpha.'"';
+    $newColor = 'red="'.$newRed.'" green="'.$newGreen.'" blue="'.$newBlue.'" alpha="'.$newAlpha.'"';
     $replaceContents = str_replace($oldColor, $newColor, $fileContents);
         
     if($replaceContents == $fileContents) {
