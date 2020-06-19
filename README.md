@@ -1,19 +1,22 @@
 # XibChangeColor
 
-可以快速將整個專案的(xib storyboard)顏色更換的小工具
+Change all interface builder(xib, storyboard) color.
 
 ![image](https://github.com/Aiur3908/XibChangeColor/blob/master/README/Image/Demo.gif)
 
-1. 填入舊的RGBA與新的RGBA
+1. Download this file to your xcode project folde
+下載此檔案到你的Xcode專案資料夾內
+
+2. Edit this file, input your old and new argb (accurate to 3 ~ 4 decimal places)
+編輯這個檔案，輸入舊的與新的ARGB(小數點3~4位就好囉)
 
 ![image](https://github.com/Aiur3908/XibChangeColor/blob/master/README/Image/1.png)
 
-請注意，小數點請不要輸入過多，約後3~4位即可，同一個顏色的小數點位數有可能不同。
-
-2. 將ChangeXibColor與專案放在一起，前往專案目錄後，拉到終端機執行
+3. Open terminal and drag it.
+將此檔案拉到終端機執行。
 
 ![image](https://github.com/Aiur3908/XibChangeColor/blob/master/README/Image/2.png)
 
-3. 搞定
-
+4. Done!
+搞定！
 ![image](https://github.com/Aiur3908/XibChangeColor/blob/master/README/Image/3.png)
